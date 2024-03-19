@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>トドカレンダー</h1>
+  </header>
+
+  <section class="main">
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th class="sun">Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th >Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="off">31</td>
+          <td data-date="03-01">1</td>
+          <td data-date="03-02">2</td>
+          <td data-date="03-03">3</td>
+          <td data-date="03-04">4</td>
+          <td data-date="03-05">5</td>
+          <td data-date="03-06"class="date right">6</td>
+        </tr>
+        <tr>
+          <td data-date="03-07"class="date off">7</td>
+          <td data-date="03-08">8</td>
+          <td data-date="03-09">9</td>
+          <td data-date="03-10">10</td>
+          <td data-date="03-11">11</td>
+          <td data-date="03-12">12</td>
+          <td data-date="03-13"class="date right">13</td>
+        </tr>
+        <tr>
+          <td data-date="03-14"class="date off">14</td>
+          <td data-date="03-15">15</td>
+          <td data-date="03-16">16</td>
+          <td data-date="03-17">17</td>
+          <td data-date="03-18">18</td>
+          <td data-date="03-19">19</td>
+          <td data-date="03-20" class="date right">20</td>
+        </tr>
+        <tr>
+          <td data-date="03-21"class="off">21</td>
+          <td data-date="03-22">22</td>
+          <td data-date="03-23">23</td>
+          <td data-date="03-24">24</td>
+          <td data-date="03-25">25</td>
+          <td data-date="03-26">26</td>
+          <td data-date="03-27" class="date right">27</td>
+        </tr>
+        <tr>
+          <td data-date="03-28"class="off">28</td>
+          <td data-date="03-29">29</td>
+          <td data-date="03-30">30</td>
+          <td data-date="03-31">31</td>
+          <td data-date="04-01">1</td>
+          <td data-date="04-02">2</td>
+          <td data-date="04-03"class="date right">3</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="modal" id="modal-outside">
+      <button class="modal" id="modal-close">
+        CLOSE
+      </button>
+      <form class="modal" id="modal-form">
+        <input type="modal" id="modal-input" placeholder="Add your todo">
+        <button type="submit">Add Todo</button>
+      </form>
+      <div class="modal" id="modal-title"></div>
+      <div class="modal" id="modal-content"></div> 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

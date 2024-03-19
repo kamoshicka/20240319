@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+html, body {
+  height: 100%;
+}
+
+/**********************************
+ * Grid関連のスタイル
+ **********************************/
+
+.grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 4rem 1fr 4rem;
+  height: 100%;
+}
+
+.header {
+  grid-column: 1/-1;
+}
+
+.sidebar {
+  grid-row: 2/-1;
+}
+
+
+/**********************************
+ * レスポンシブ
+ **********************************/
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 1fr auto 4rem;
+  }
+
+  .sidebar {
+    grid-row: 3/4;
+  }
+}
+
+.header {
+  background-color: #7effdb;
+  padding: 1rem;
+}
+
+.main {
+  background-color: #b693fe;
+  padding: 1rem;
+}
+
+.sidebar {
+  background-color: #8c82fc;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: #ff9de2;
+  padding: 1rem;
+}
+
+/* modal */
+/* modal */
+/* modal */
+.modal {
+  display: none;
+}
+
+#modal-outside {
+  background: orange;
+  width: 250px;
+  height: 160px;
+  position: absolute;
+  bottom: 40px;
+}
+
+#modal-inside {
+  background: yellow;
+  width: 230px;
+  height: 140px;
+}
+
+#modal-button {
+
+}
+
+#modal-title {
+  font-weight: bold;
+  padding-top: 24px;
+}
